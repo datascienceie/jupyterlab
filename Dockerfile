@@ -12,5 +12,5 @@ WORKDIR /home/user
 RUN python3 -m pip install --user jupyterlab
 
 EXPOSE 8888
-CMD [ "python3","-m","jupyterlab" ]
+CMD [ "python3","-m","jupyterlab","--ip","0.0.0.0" ]
 
